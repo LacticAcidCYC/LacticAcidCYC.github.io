@@ -108,13 +108,16 @@
 
 
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="Hope never dies.">
+<meta property="og:type" content="website">
 <meta property="og:title" content="LacticAcid">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="LacticAcid">
+<meta property="og:description" content="Hope never dies.">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LacticAcid">
+<meta name="twitter:description" content="Hope never dies.">
 
 
 
@@ -277,11 +280,156 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/14/JS-study-notes-map-reduce/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Eric">
+      <meta itemprop="description" content="Hope never dies.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LacticAcid">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/14/JS-study-notes-map-reduce/" itemprop="url">
+                  JS study notes-map/reduce
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-07-14 22:57:13 / Modified: 23:15:33" itemprop="dateCreated datePublished" datetime="2018-07-14T22:57:13-07:00">2018-07-14</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Map-Reduce"><a href="#Map-Reduce" class="headerlink" title="Map/Reduce"></a>Map/Reduce</h1><h2 id="1-Map"><a href="#1-Map" class="headerlink" title="1. Map"></a>1. Map</h2><p>For example, there is a function f(x) = x * x. If you want to call this function on every element in an array, you can use map():</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> pow(x) &#123;</span><br><span class="line">    <span class="built_in">return</span> x * x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];</span><br><span class="line">var results = arr.map(pow); // [1, 4, 9, 16, 25, 36, 49, 64, 81]</span><br><span class="line">console.log(results);</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank" rel="noopener">reference on Mozilla</a></p>
+<h2 id="2-Reduce"><a href="#2-Reduce" class="headerlink" title="2. Reduce"></a>2. Reduce</h2><h3 id="Brief-Definition"><a href="#Brief-Definition" class="headerlink" title="Brief Definition"></a>Brief Definition</h3><p>The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" target="_blank" rel="noopener">reference on Mozilla</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/14/JS-Study-Notes/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Eric">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Hope never dies.">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -422,7 +570,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Eric">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Hope never dies.">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -561,7 +709,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Eric">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Hope never dies.">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -719,7 +867,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Eric</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Hope never dies.</p>
           </div>
 
           
@@ -729,7 +877,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>

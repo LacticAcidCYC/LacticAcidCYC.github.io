@@ -108,24 +108,24 @@
 
 
 
-  <meta name="description" content="Today is my third day of intern and also my mom’s birthday!!!朋友圈看到个解决国外使用网易云音乐时因为版权听不了很多歌曲的办法：12345678910Mac:打开终端，sudo vi /etc/hosts ，然后将以下添加进文件末尾158.199.142.239 music.163.com p1.music.126.netp2.music">
+  <meta name="description" content="Map/Reduce1. MapFor example, there is a function f(x) = x * x. If you want to call this function on every element in an array, you can use map(): 123456789&apos;use strict&apos;;function pow(x) &amp;#123;    return">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My first post">
-<meta property="og:url" content="http://yoursite.com/2018/07/13/My-first-post/index.html">
+<meta property="og:title" content="JS study notes-map&#x2F;reduce">
+<meta property="og:url" content="http://yoursite.com/2018/07/14/JS-study-notes-map-reduce/index.html">
 <meta property="og:site_name" content="LacticAcid">
-<meta property="og:description" content="Today is my third day of intern and also my mom’s birthday!!!朋友圈看到个解决国外使用网易云音乐时因为版权听不了很多歌曲的办法：12345678910Mac:打开终端，sudo vi /etc/hosts ，然后将以下添加进文件末尾158.199.142.239 music.163.com p1.music.126.netp2.music">
+<meta property="og:description" content="Map/Reduce1. MapFor example, there is a function f(x) = x * x. If you want to call this function on every element in an array, you can use map(): 123456789&apos;use strict&apos;;function pow(x) &amp;#123;    return">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-14T06:41:16.072Z">
+<meta property="og:updated_time" content="2018-07-15T06:15:33.598Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My first post">
-<meta name="twitter:description" content="Today is my third day of intern and also my mom’s birthday!!!朋友圈看到个解决国外使用网易云音乐时因为版权听不了很多歌曲的办法：12345678910Mac:打开终端，sudo vi /etc/hosts ，然后将以下添加进文件末尾158.199.142.239 music.163.com p1.music.126.netp2.music">
+<meta name="twitter:title" content="JS study notes-map&#x2F;reduce">
+<meta name="twitter:description" content="Map/Reduce1. MapFor example, there is a function f(x) = x * x. If you want to call this function on every element in an array, you can use map(): 123456789&apos;use strict&apos;;function pow(x) &amp;#123;    return">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/13/My-first-post/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/14/JS-study-notes-map-reduce/"/>
 
 
 
@@ -135,7 +135,7 @@
   };
 </script>
 
-  <title>My first post | LacticAcid</title>
+  <title>JS study notes-map/reduce | LacticAcid</title>
   
 
 
@@ -280,7 +280,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/13/My-first-post/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/14/JS-study-notes-map-reduce/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Eric">
@@ -297,7 +297,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">My first post
+          <h1 class="post-title" itemprop="name headline">JS study notes-map/reduce
               
             
           </h1>
@@ -322,7 +322,7 @@
                 
               
 
-              <time title="Created: 2018-07-13 23:15:51 / Modified: 23:41:16" itemprop="dateCreated datePublished" datetime="2018-07-13T23:15:51-07:00">2018-07-13</time>
+              <time title="Created: 2018-07-14 22:57:13 / Modified: 23:15:33" itemprop="dateCreated datePublished" datetime="2018-07-14T22:57:13-07:00">2018-07-14</time>
             
 
             
@@ -360,7 +360,13 @@
       
 
       
-        <h2 id="Today-is-my-third-day-of-intern-and-also-my-mom’s-birthday"><a href="#Today-is-my-third-day-of-intern-and-also-my-mom’s-birthday" class="headerlink" title="Today is my third day of intern and also my mom’s birthday!!!"></a>Today is my third day of intern and also my mom’s birthday!!!</h2><h3 id="朋友圈看到个解决国外使用网易云音乐时因为版权听不了很多歌曲的办法："><a href="#朋友圈看到个解决国外使用网易云音乐时因为版权听不了很多歌曲的办法：" class="headerlink" title="朋友圈看到个解决国外使用网易云音乐时因为版权听不了很多歌曲的办法："></a>朋友圈看到个解决国外使用网易云音乐时因为版权听不了很多歌曲的办法：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Mac:</span><br><span class="line">打开终端，sudo vi /etc/hosts ，然后将以下添加进文件末尾</span><br><span class="line">158.199.142.239 music.163.com p1.music.126.net</span><br><span class="line">p2.music.126.net p3.music.126.net p4.music.126.net</span><br><span class="line"></span><br><span class="line">Windows: 打开命令提示符（管理员权限），执行该命令：</span><br><span class="line"><span class="built_in">echo</span> 158.199.142.239 music.163.com </span><br><span class="line">p1.music.126.net p2.music.126.net </span><br><span class="line">p3.music.126.net p4.music.126.net &gt;&gt;</span><br><span class="line">C:\WINDOWS\System32\drivers\etc\hosts</span><br></pre></td></tr></table></figure>
+        <h1 id="Map-Reduce"><a href="#Map-Reduce" class="headerlink" title="Map/Reduce"></a>Map/Reduce</h1><h2 id="1-Map"><a href="#1-Map" class="headerlink" title="1. Map"></a>1. Map</h2><p>For example, there is a function f(x) = x * x. If you want to call this function on every element in an array, you can use map():</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> pow(x) &#123;</span><br><span class="line">    <span class="built_in">return</span> x * x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];</span><br><span class="line">var results = arr.map(pow); // [1, 4, 9, 16, 25, 36, 49, 64, 81]</span><br><span class="line">console.log(results);</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank" rel="noopener">reference on Mozilla</a></p>
+<h2 id="2-Reduce"><a href="#2-Reduce" class="headerlink" title="2. Reduce"></a>2. Reduce</h2><h3 id="Brief-Definition"><a href="#Brief-Definition" class="headerlink" title="Brief Definition"></a>Brief Definition</h3><p>The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" target="_blank" rel="noopener">reference on Mozilla</a></p>
+
       
     </div>
 
@@ -387,8 +393,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/13/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/07/14/JS-Study-Notes/" rel="next" title="JS Study Notes">
+                <i class="fa fa-chevron-left"></i> JS Study Notes
               </a>
             
           </div>
@@ -396,10 +402,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/14/JS-Study-Notes/" rel="prev" title="JS Study Notes">
-                JS Study Notes <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -513,7 +515,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Today-is-my-third-day-of-intern-and-also-my-mom’s-birthday"><span class="nav-number">1.</span> <span class="nav-text">Today is my third day of intern and also my mom’s birthday!!!</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#朋友圈看到个解决国外使用网易云音乐时因为版权听不了很多歌曲的办法："><span class="nav-number">1.1.</span> <span class="nav-text">朋友圈看到个解决国外使用网易云音乐时因为版权听不了很多歌曲的办法：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Map-Reduce"><span class="nav-number">1.</span> <span class="nav-text">Map/Reduce</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Map"><span class="nav-number">1.1.</span> <span class="nav-text">1. Map</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Reduce"><span class="nav-number">1.2.</span> <span class="nav-text">2. Reduce</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Brief-Definition"><span class="nav-number">1.2.1.</span> <span class="nav-text">Brief Definition</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
