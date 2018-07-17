@@ -326,12 +326,24 @@
                 
               
 
-              <time title="Created: 2018-07-14 22:57:13 / Modified: 23:15:33" itemprop="dateCreated datePublished" datetime="2018-07-14T22:57:13-07:00">2018-07-14</time>
+              <time title="Created: 2018-07-14 22:57:13" itemprop="dateCreated datePublished" datetime="2018-07-14T22:57:13-07:00">2018-07-14</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-17 11:19:10" itemprop="dateModified" datetime="2018-07-17T11:19:10-07:00">2018-07-17</time>
               
             
           </span>
@@ -365,15 +377,18 @@
 
       
         
-          
-            <h1 id="Map-Reduce"><a href="#Map-Reduce" class="headerlink" title="Map/Reduce"></a>Map/Reduce</h1><h2 id="1-Map"><a href="#1-Map" class="headerlink" title="1. Map"></a>1. Map</h2><p>For example, there is a function f(x) = x * x. If you want to call this function on every element in an array, you can use map():</p>
+          <h1 id="Map-Reduce"><a href="#Map-Reduce" class="headerlink" title="Map/Reduce"></a>Map/Reduce</h1><h2 id="1-map"><a href="#1-map" class="headerlink" title="1. map"></a>1. map</h2><p>For example, there is a function f(x) = x * x. If you want to call this function on every element in an array, you can use map():</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> pow(x) &#123;</span><br><span class="line">    <span class="built_in">return</span> x * x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];</span><br><span class="line">var results = arr.map(pow); // [1, 4, 9, 16, 25, 36, 49, 64, 81]</span><br><span class="line">console.log(results);</span><br></pre></td></tr></table></figure>
+<p>Other example:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// transfer the numbers <span class="keyword">in</span> an array to string</span><br><span class="line"></span><br><span class="line">var arr = [1,2,3,4,5,6,7,8,9];</span><br><span class="line">arr.map(String); // [<span class="string">'1'</span>, <span class="string">'2'</span>, <span class="string">'3'</span>, <span class="string">'4'</span>, <span class="string">'5'</span>, <span class="string">'6'</span>, <span class="string">'7'</span>, <span class="string">'8'</span>, <span class="string">'9'</span>]</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank" rel="noopener">reference on Mozilla</a></p>
-<h2 id="2-Reduce"><a href="#2-Reduce" class="headerlink" title="2. Reduce"></a>2. Reduce</h2><h3 id="Brief-Definition"><a href="#Brief-Definition" class="headerlink" title="Brief Definition"></a>Brief Definition</h3><p>The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" target="_blank" rel="noopener">reference on Mozilla</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/14/JS-study-notes-map-reduce/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
