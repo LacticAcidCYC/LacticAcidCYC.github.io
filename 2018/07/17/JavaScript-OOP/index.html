@@ -108,17 +108,17 @@
 
 
 
-  <meta name="description" content="Hope never dies.">
+  <meta name="description" content="OOP1. Basic Ideas JavaScript不区分类和实例的概念，而是通过原型（prototype）来实现面向对象编程。 JavaScript的原型链和Java的Class区别就在，它没有“Class”的概念，所有对象都是实例，所谓继承关系不过是把一个对象的原型指向另一个对象而已。 在JavaScrip代码运行时期，你可以把一个对象从A变成B，或者变成任何对象。 在编写JavaScri">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript-OOP">
 <meta property="og:url" content="http://yoursite.com/2018/07/17/JavaScript-OOP/index.html">
 <meta property="og:site_name" content="LacticAcid">
-<meta property="og:description" content="Hope never dies.">
+<meta property="og:description" content="OOP1. Basic Ideas JavaScript不区分类和实例的概念，而是通过原型（prototype）来实现面向对象编程。 JavaScript的原型链和Java的Class区别就在，它没有“Class”的概念，所有对象都是实例，所谓继承关系不过是把一个对象的原型指向另一个对象而已。 在JavaScrip代码运行时期，你可以把一个对象从A变成B，或者变成任何对象。 在编写JavaScri">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-18T06:42:57.688Z">
+<meta property="og:updated_time" content="2018-07-18T07:20:07.829Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript-OOP">
-<meta name="twitter:description" content="Hope never dies.">
+<meta name="twitter:description" content="OOP1. Basic Ideas JavaScript不区分类和实例的概念，而是通过原型（prototype）来实现面向对象编程。 JavaScript的原型链和Java的Class区别就在，它没有“Class”的概念，所有对象都是实例，所谓继承关系不过是把一个对象的原型指向另一个对象而已。 在JavaScrip代码运行时期，你可以把一个对象从A变成B，或者变成任何对象。 在编写JavaScri">
 
 
 
@@ -326,6 +326,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-18 00:20:07" itemprop="dateModified" datetime="2018-07-18T00:20:07-07:00">2018-07-18</time>
+              
+            
           </span>
 
           
@@ -356,7 +372,27 @@
       
 
       
-        
+        <h1 id="OOP"><a href="#OOP" class="headerlink" title="OOP"></a>OOP</h1><h2 id="1-Basic-Ideas"><a href="#1-Basic-Ideas" class="headerlink" title="1. Basic Ideas"></a>1. Basic Ideas</h2><ul>
+<li>JavaScript不区分类和实例的概念，而是通过原型（prototype）来实现面向对象编程。</li>
+<li>JavaScript的原型链和Java的Class区别就在，它没有“Class”的概念，所有对象都是实例，所谓继承关系不过是把一个对象的原型指向另一个对象而已。</li>
+<li>在JavaScrip代码运行时期，你可以把一个对象从<code>A</code>变成<code>B</code>，或者变成任何对象。</li>
+<li>在编写JavaScript代码时，不要直接用<code>obj.__proto__</code>去改变一个对象的原型。</li>
+<li><code>Object.create()</code>方法可以传入一个原型对象，并创建一个基于该原型的新对象，但是新对象什么属性都没有</li>
+</ul>
+<a id="more"></a>
+<h2 id="2-Create-Object"><a href="#2-Create-Object" class="headerlink" title="2. Create Object"></a>2. Create Object</h2><p>JavaScript对每个创建的对象都会设置一个原型，指向它的原型对象。</p>
+<p>当我们用<code>obj.xxx</code>访问一个对象的属性时，JavaScript引擎先在当前对象上查找该属性，如果没有找到，就到其原型对象上找，如果还没有找到，就一直上溯到<code>Object.prototype</code>对象，最后，如果还没有找到，就只能返回<code>undefined</code>。</p>
+<p>e.g. </p>
+<p>(1) create a Array object:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3];</span><br></pre></td></tr></table></figure>
+<p>Its prototype chain is:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr ---&gt; Array.prototype ---&gt; Object.prototype ---&gt; null</span><br></pre></td></tr></table></figure>
+<p>(2) create a function:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">foo</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>function is also an object, its prototype is:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">foo ---&gt; Function.prototype ---&gt; Object.prototype ---&gt; null</span><br></pre></td></tr></table></figure>
+<p><strong> 如果原型链很长，那么访问一个对象的属性就会因为花更多的时间查找而变得更慢，因此要注意不要把原型链搞得太长。</strong></p>
+<h3 id="Create-Function"><a href="#Create-Function" class="headerlink" title="Create Function"></a>Create Function</h3><h2 id="3-Prototype-Inheritance"><a href="#3-Prototype-Inheritance" class="headerlink" title="3. Prototype Inheritance"></a>3. Prototype Inheritance</h2><h2 id="4-Class-Inheritance"><a href="#4-Class-Inheritance" class="headerlink" title="4. Class Inheritance"></a>4. Class Inheritance</h2>
       
     </div>
 
@@ -440,8 +476,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -486,6 +531,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#OOP"><span class="nav-number">1.</span> <span class="nav-text">OOP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Basic-Ideas"><span class="nav-number">1.1.</span> <span class="nav-text">1. Basic Ideas</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Create-Object"><span class="nav-number">1.2.</span> <span class="nav-text">2. Create Object</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-Function"><span class="nav-number">1.2.1.</span> <span class="nav-text">Create Function</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Prototype-Inheritance"><span class="nav-number">1.3.</span> <span class="nav-text">3. Prototype Inheritance</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Class-Inheritance"><span class="nav-number">1.4.</span> <span class="nav-text">4. Class Inheritance</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
