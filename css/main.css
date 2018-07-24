@@ -1800,8 +1800,10 @@ pre .javascript .function {
   display: block;
   margin: 0 auto;
   padding: 2px;
-  max-width: 96px;
-  height: auto;
+/*max-width: $site-author-image-width;*/
+/*height: $site-author-image-height;*/
+  max-width: 100px;
+  height: 100px;
   border: 2px solid #333;
 }
 .site-author-name {
@@ -1884,7 +1886,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb105;
+  background: #fff;
 }
 .links-of-blogroll {
   font-size: 13px;
