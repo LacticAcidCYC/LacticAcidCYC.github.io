@@ -301,6 +301,181 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lacticacidcyc.github.io/2018/08/12/Access-MAMP-s-mysql-from-command/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LacticAcidCYC">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LacticAcid's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/12/Access-MAMP-s-mysql-from-command/" itemprop="url">Access MAMP's mysql from command</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-12T17:35:47-07:00">
+                2018-08-12
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2018-08-12T17:45:38-07:00">
+                2018-08-12
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/08/12/Access-MAMP-s-mysql-from-command/" class="leancloud_visitors" data-flag-title="Access MAMP's mysql from command">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Access-MAMP’s-mysql-from-command"><a href="#Access-MAMP’s-mysql-from-command" class="headerlink" title="Access MAMP’s mysql from command"></a>Access MAMP’s mysql from command</h1><p><a href="https://stackoverflow.com/questions/9335403/access-mamps-mysql-from-terminal" target="_blank" rel="noopener">reference</a></p>
+<p>If you just want to type:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u Username -p</span><br></pre></td></tr></table></figure>
+<p>You can create an alias in your <code>~/.bash_profile</code> in older OSX versions this file was called <code>~/.profile</code> so best check first with:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -la ~/</span><br></pre></td></tr></table></figure>
+<p>If one of those files exist, edit that file. Else, create a new one with what ever editor you like (here I do it with nano and have a ~/.bash_profile file):</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano ~/.bash_profile</span><br></pre></td></tr></table></figure>
+<p>insert following line:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">alias</span> mysql=/Applications/MAMP/Library/bin/mysql</span><br></pre></td></tr></table></figure>
+<p>Save the file and quit nano with <code>CTRL + X</code> and then type <code>Y</code> and <code>enter</code></p>
+<p>Then you need to type:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bash_profile</span><br></pre></td></tr></table></figure>
+<p>Now you can use:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://lacticacidcyc.github.io/2018/07/18/JavaScript-Browser/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -509,8 +684,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-07-18T11:43:55-07:00">
-                2018-07-18
+              <time title="Post modified" itemprop="dateModified" datetime="2018-08-12T17:37:47-07:00">
+                2018-08-12
               </time>
             
           </span>
@@ -1501,7 +1676,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1509,6 +1684,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
